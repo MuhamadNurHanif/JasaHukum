@@ -41,7 +41,7 @@
             </span>
             <ul class="flex justify-center mt-5 space-x-4">
                 <li>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+                    <a href="https://www.instagram.com/tri_sulasmono/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
                         <!-- Instagram -->
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
