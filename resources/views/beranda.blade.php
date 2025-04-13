@@ -40,10 +40,11 @@
                 </div>
             </div>
             <div class="flex justify-center items-center mt-8 lg:mt-0 col-span-full lg:col-span-5">
-                <div class="border-2 border-gray-300 p-4 rounded-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
-                    <img src="{{ asset('images/palu.png') }}" alt="Gambar tidak ada" class="w-full h-auto rounded-lg object-cover">
+                <!-- Menyesuaikan ukuran kolom untuk gambar lebih besar -->
+                <div class="border-2 border-gray-300 p-4 rounded-lg w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
+                    <img src="{{ asset('images/Palu_Sidang.png') }}" alt="Gambar tidak ada" class="w-full h-auto rounded-lg object-cover">
                 </div>
-            </div>            
+            </div>           
         </div>
     </section>
 
@@ -84,9 +85,9 @@
             </figcaption>
           </figure>
         </div>
-      </section>      
-
-    {{-- Information --}}
+    </section>      
+ 
+      {{-- Information --}}
     <section class="bg-white dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
             <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
@@ -95,206 +96,142 @@
             </div>
             <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Pricing Card -->
-                <div
-                    class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for
-                        your next project.</p>
-                    <div class="flex items-baseline justify-center my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$29</span>
-                        <span class="text-gray-500 dark:text-gray-400">/month</span>
+                <div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+                    <!-- Gambar -->
+                    <img class="w-full h-48 object-cover" src="{{ asset('images/ts.jpg') }}" alt="Gambar Artikel">
+                  
+                    <!-- Konten -->
+                    <div class="p-6">
+                      <!-- Judul -->
+                      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Sambut Tahun Baru 2023, Ketua BAI DPD Jatim Ingin Anggota Lebih Banyak Berpetualang
+                      </h2>
+                  
+                      <!-- Info Admin dan Tanggal -->
+                      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                        <!-- Icon User -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 0a5 5 0 00-5 5v1a5 5 0 0010 0V5a5 5 0 00-5-5zm-7 16a7 7 0 0114 0v1H3v-1z" />
+                        </svg>
+                        <span>Admin</span>
+                  
+                        <span class="mx-2">•</span>
+                  
+                        <!-- Icon Calendar -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 2a1 1 0 012 0v1h4V2a1 1 0 112 0v1h2a2 2 0 012 2v1H2V5a2 2 0 012-2h2V2zm12 5H2v9a2 2 0 002 2h12a2 2 0 002-2V7z" />
+                        </svg>
+                        <span>13 April 2025</span>
+                      </div>
+                  
+                      <!-- Ringkasan Konten -->
+                      <p class="text-gray-700 dark:text-gray-300 mb-5">
+                        Badan Advokasi Indonesia, Jatim - Ketua BAI DPD Jatim Tri Sulasmono menyambut tahun baru 2023 dengan harapan besar sebagai salah seorang yang berprofesi sebagai penegak hukum di Lembaga Bantuan Hukum, Badan Advokasi Indonesia.
+                      </p>
+                  
+                      <!-- Tombol -->
+                      <a href="{{ route('detail') }}"
+                        class="inline-block px-5 py-2.5 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 transition">
+                        Lihat Selengkapnya
+                      </a>
                     </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Individual configuration</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>No setup, or hidden fees</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Team size: <span class="font-semibold">1 developer</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Premium support: <span class="font-semibold">6 months</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Free updates: <span class="font-semibold">6 months</span></span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get
-                        started</a>
-                </div>
-                <!-- Pricing Card -->
-                <div
-                    class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Company</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users,
-                        extended & premium support.</p>
-                    <div class="flex items-baseline justify-center my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$99</span>
-                        <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
+                </div>                  
+                
+                  {{-- card 2 --}}
+                  <div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+                    <!-- Gambar -->
+                    <img class="w-full h-48 object-cover" src="{{ asset('images/ts.jpg') }}" alt="Gambar Artikel">
+                  
+                    <!-- Konten -->
+                    <div class="p-6">
+                      <!-- Judul -->
+                      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Sambut Tahun Baru 2023, Ketua BAI DPD Jatim Ingin Anggota Lebih Banyak Berpetualang
+                      </h2>
+                  
+                      <!-- Info Admin dan Tanggal -->
+                      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                        <!-- Icon User -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 0a5 5 0 00-5 5v1a5 5 0 0010 0V5a5 5 0 00-5-5zm-7 16a7 7 0 0114 0v1H3v-1z" />
+                        </svg>
+                        <span>Admin</span>
+                  
+                        <span class="mx-2">•</span>
+                  
+                        <!-- Icon Calendar -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 2a1 1 0 012 0v1h4V2a1 1 0 112 0v1h2a2 2 0 012 2v1H2V5a2 2 0 012-2h2V2zm12 5H2v9a2 2 0 002 2h12a2 2 0 002-2V7z" />
+                        </svg>
+                        <span>13 April 2025</span>
+                      </div>
+                  
+                      <!-- Ringkasan Konten -->
+                      <p class="text-gray-700 dark:text-gray-300 mb-5">
+                        Badan Advokasi Indonesia, Jatim - Ketua BAI DPD Jatim Tri Sulasmono menyambut tahun baru 2023 dengan harapan besar sebagai salah seorang yang berprofesi sebagai penegak hukum di Lembaga Bantuan Hukum, Badan Advokasi Indonesia.
+                      </p>
+                  
+                      <!-- Tombol -->
+                      <a href="#"
+                        class="inline-block px-5 py-2.5 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 transition">
+                        Lihat Selengkapnya
+                      </a>
                     </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Individual configuration</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>No setup, or hidden fees</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Team size: <span class="font-semibold">10 developers</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Premium support: <span class="font-semibold">24 months</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Free updates: <span class="font-semibold">24 months</span></span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get
-                        started</a>
-                </div>
-                <!-- Pricing Card -->
-                <div
-                    class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
-                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and
-                        extended redistribution rights.</p>
-                    <div class="flex items-baseline justify-center my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$499</span>
-                        <span class="text-gray-500 dark:text-gray-400">/month</span>
+                </div> 
+
+                {{-- card 3 --}}
+                <div class="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+                    <!-- Gambar -->
+                    <img class="w-full h-48 object-cover" src="{{ asset('images/ts.jpg') }}" alt="Gambar Artikel">
+                  
+                    <!-- Konten -->
+                    <div class="p-6">
+                      <!-- Judul -->
+                      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        Sambut Tahun Baru 2023, Ketua BAI DPD Jatim Ingin Anggota Lebih Banyak Berpetualang
+                      </h2>
+                  
+                      <!-- Info Admin dan Tanggal -->
+                      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                        <!-- Icon User -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 0a5 5 0 00-5 5v1a5 5 0 0010 0V5a5 5 0 00-5-5zm-7 16a7 7 0 0114 0v1H3v-1z" />
+                        </svg>
+                        <span>Admin</span>
+                  
+                        <span class="mx-2">•</span>
+                  
+                        <!-- Icon Calendar -->
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6 2a1 1 0 012 0v1h4V2a1 1 0 112 0v1h2a2 2 0 012 2v1H2V5a2 2 0 012-2h2V2zm12 5H2v9a2 2 0 002 2h12a2 2 0 002-2V7z" />
+                        </svg>
+                        <span>13 April 2025</span>
+                      </div>
+                  
+                      <!-- Ringkasan Konten -->
+                      <p class="text-gray-700 dark:text-gray-300 mb-5">
+                        Badan Advokasi Indonesia, Jatim - Ketua BAI DPD Jatim Tri Sulasmono menyambut tahun baru 2023 dengan harapan besar sebagai salah seorang yang berprofesi sebagai penegak hukum di Lembaga Bantuan Hukum, Badan Advokasi Indonesia.
+                      </p>
+                  
+                      <!-- Tombol -->
+                      <a href="#"
+                        class="inline-block px-5 py-2.5 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800 transition">
+                        Lihat Selengkapnya
+                      </a>
                     </div>
-                    <!-- List -->
-                    <ul role="list" class="mb-8 space-y-4 text-left">
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Individual configuration</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>No setup, or hidden fees</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Team size: <span class="font-semibold">100+ developers</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Premium support: <span class="font-semibold">36 months</span></span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Free updates: <span class="font-semibold">36 months</span></span>
-                        </li>
-                    </ul>
-                    <a href="#"
-                        class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Get
-                        started</a>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
