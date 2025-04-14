@@ -2,9 +2,10 @@
     <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <!-- Logo -->
-            <a href="#" class="flex items-center">
+            <a href="{{ route('beranda') }}" class="flex items-center">
                 <img src="{{ asset('images/logo.jpg') }}" class="h-6 mr-3 sm:h-9" alt="Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Tri Sulasmono, S.H & Partner</span>
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Tri Sulasmono, S.H &
+                    Partner</span>
             </a>
 
             <!-- Hamburger button -->
@@ -12,8 +13,7 @@
                 class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
                 aria-controls="mobile-menu" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 5h14a1 1 0 01 0 2H3a1 1 0 01 0-2zm0 6h14a1 1 0 01 0 2H3a1 1 0 01 0-2zm0 6h14a1 1 0 01 0 2H3a1 1 0 01 0-2z"
                         clip-rule="evenodd"></path>
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </div>
     </nav>
 </header>
