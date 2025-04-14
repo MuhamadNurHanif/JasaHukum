@@ -53,7 +53,7 @@
                     data-aos="zoom-out-down" data-aos-delay="500">
                     <div
                         class="border-2 border-gray-300 p-4 rounded-lg w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl">
-                        <img src="{{ asset('images/Palu_Sidang.png') }}" alt="Gambar tidak ada"
+                        <img src="{{ asset('images/beranda.jpeg') }}" alt="Gambar tidak ada"
                             class="w-full h-auto rounded-lg object-cover">
                     </div>
                 </div>
