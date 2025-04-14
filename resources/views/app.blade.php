@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <link rel="canonical" href="https://demo.themesberg.com/landwind/" />
     <meta charset="UTF-8">
@@ -35,24 +36,26 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/output.css'])
 </head>
+
 <body>
 
     {{-- Navbar --}}
     @include('partials.navbar')
 
     {{-- Konten halaman --}}
-     <main> 
-      @yield('content') 
-     </main> 
+    <main>
+        @yield('content')
+    </main>
 
     {{-- Icon WA --}}
     @include('partials.whatapps')
 
     {{-- Footer --}}
     @include('partials.footer')
-    
+
 </body>
 <script>
     AOS.init();
 </script>
+
 </html>

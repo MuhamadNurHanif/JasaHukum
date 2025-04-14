@@ -1,62 +1,63 @@
 @extends('app')
 
 @section('content')
-    <main>
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('images/ikadin.png') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    <main class="pt-24">
+        <section class="py-20 bg-gray-100 dark:bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-blue-800">Jenis Layanan Hukum</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6 rounded-full"></div>
+                    <p class="text-lg text-gray-600 dark:text-gray-600 max-w-3xl mx-auto">
+                        Kami menyediakan berbagai layanan hukum yang dirancang untuk memenuhi kebutuhan individu maupun
+                        korporasi dengan pendekatan profesional dan terpercaya.
+                    </p>
                 </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('images/kai.png') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ asset('images/Palu_Sidang.png') }}"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center bg-blue-100 text-black rounded-full text-2xl font-semibold mb-4">
+                            1
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Layanan Warga Negara Indonesia</h3>
+                        <p class="text-gray-600 dark:text-gray-900 text-sm leading-relaxed">
+                            Layanan hukum bagi perorangan atau organisasi dalam perkara perdata (keluarga, bisnis, pajak,
+                            properti, dsb.) maupun pidana umum dan khusus. Kami hadir untuk mewakili kepentingan hukum Anda
+                            dengan integritas.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center bg-blue-100 text-black rounded-full text-2xl font-semibold mb-4">
+                            2
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Layanan Perusahaan</h3>
+                        <p class="text-gray-600 dark:text-gray-900 text-sm leading-relaxed">
+                            Menyediakan pendampingan hukum bagi entitas bisnis dalam urusan kontraktual, perpajakan,
+                            ketenagakerjaan, merger, akuisisi, dan kepatuhan terhadap hukum yang berlaku.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="w-14 h-14 flex items-center justify-center bg-blue-100 text-black rounded-full text-2xl font-semibold mb-4">
+                            3
+                        </div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-3">Layanan Pro Bono</h3>
+                        <p class="text-gray-600 dark:text-gray-900 text-sm leading-relaxed">
+                            Komitmen kami terhadap keadilan diwujudkan dengan layanan hukum gratis untuk masyarakat kurang
+                            mampu, sesuai dengan peraturan dan dokumen pendukung yang sah.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
+        </section>
     </main>
 @endsection
