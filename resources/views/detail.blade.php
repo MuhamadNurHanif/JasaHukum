@@ -1,4 +1,4 @@
-@extends('app')
+{{-- @extends('app')
 
 @section('content')
 <!-- 
@@ -388,4 +388,4 @@ URL: https://flowbite.com/docs/components/typography/
         </div>
     </div>
   </aside>
-@endsection
+@endsection --}}
