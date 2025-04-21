@@ -180,7 +180,7 @@
                     </div>
                     <div
                         class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                        <div class="text-5xl font-bold mb-2 count-up" data-count="15">0</div>
+                        <div class="text-5xl font-bold mb-2 count-up" data-count="5">0</div>
                         <div class="text-xl">Tahun Pengalaman</div>
                     </div>
                 </div>
@@ -505,7 +505,8 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Alamat Kantor</h4>
-                                        <p class="text-gray-600">Kertosari, Kabupaten Banyuwangi, Jawa Timur</p>
+                                        <p class="text-gray-600">Perumahan Kertosari Land Blok C No. 12 Banyuwangi, Jawa
+                                            Timur 68418</p>
                                     </div>
                                 </div>
 
@@ -536,7 +537,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Jam Operasional</h4>
-                                        <p class="text-gray-600">Senin - Sabtu: Janji Temu <br> Minggu: Tutup</p>
+                                        <p class="text-gray-600">Senin - Sabtu: Janji Temu <br> Minggu: Libur</p>
                                     </div>
                                 </div>
                             </div>
@@ -592,7 +593,7 @@
                         counter.innerText = Math.ceil(count + increment);
                         setTimeout(animateCounters, 1);
                     } else {
-                        counter.innerText = target + '+-';
+                        counter.innerText = target + '+';
                     }
                 });
             }
