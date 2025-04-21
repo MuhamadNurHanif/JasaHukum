@@ -263,17 +263,17 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div
                             class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                            <div class="text-5xl font-bold mb-2 count-up" data-count="100">0</div>
+                            <div class="text-5xl font-bold mb-2 count-up" data-count="100" data-suffix="+">0</div>
                             <div class="text-xl">Kasus Diselesaikan</div>
                         </div>
                         <div
                             class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                            <div class="text-5xl font-bold mb-2 count-up" data-count="99">0</div>
-                            <div class="text-xl">% Klien Puas</div>
+                            <div class="text-5xl font-bold mb-2 count-up" data-count="99" data-suffix="%">0</div>
+                            <div class="text-xl">Klien Puas</div>
                         </div>
                         <div
                             class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                            <div class="text-5xl font-bold mb-2 count-up" data-count="5">0</div>
+                            <div class="text-5xl font-bold mb-2 count-up" data-count="5" data-suffix="+">0</div>
                             <div class="text-xl">Tahun Pengalaman</div>
                         </div>
                     </div>
@@ -691,17 +691,19 @@
                 function animateCounters() {
                     counters.forEach(counter => {
                         const target = +counter.getAttribute('data-count');
-                        const count = +counter.innerText;
+                        const suffix = counter.getAttribute('data-suffix') || '';
+                        const count = parseInt(counter.innerText.replace(/\D/g, '')) || 0;
                         const increment = target / speed;
 
                         if (count < target) {
-                            counter.innerText = Math.ceil(count + increment);
+                            counter.innerText = Math.ceil(count + increment) + suffix;
                             setTimeout(animateCounters, 1);
                         } else {
-                            counter.innerText = target + '+';
+                            counter.innerText = target + suffix;
                         }
                     });
                 }
+
 
                 // Only start counting when section is in view
                 const observer = new IntersectionObserver((entries) => {
