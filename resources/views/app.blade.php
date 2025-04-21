@@ -22,18 +22,16 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:description" content="Jasa bantuan hukum terpercaya dan profesional.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content={{ asset('images/logo.jpg') }}>
+    <meta property="og:image" content={{ asset('images/Logo.jpg') }}>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@themesberg" />
     <meta name="twitter:creator" content="@themesberg" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="{{ asset('images/logo.jpg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/Logo.jpg') }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/output.css'])
@@ -56,8 +54,5 @@
     @include('partials.footer')
 
 </body>
-<script>
-    AOS.init();
-</script>
 
 </html>

@@ -85,7 +85,7 @@
                 <div class="flex flex-col md:flex-row justify-center gap-4">
                     <a href="tel:+62859106953875"
                         class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
-                        Konsultasi Gratis Sekarang
+                        Konsultasi Sekarang
                     </a>
                     <a href="tel:+62859106953875"
                         class="bg-transparent hover:bg-white hover:text-blue-900 text-white font-bold py-4 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105">
@@ -109,16 +109,17 @@
                             alt="Tim Advokat" class="rounded-lg shadow-xl w-full">
                     </div>
                     <div class="md:w-1/2">
-                        <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional dengan
-                            Pengalaman Lebih dari 15 Tahun</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional</h3>
                         <p class="text-gray-700 mb-4 leading-relaxed">
-                            Advokat & Partners adalah kantor hukum yang berkomitmen untuk memberikan layanan hukum terbaik
-                            dengan integritas tinggi. Didirikan pada tahun 2008, kami telah membantu ribuan klien dalam
-                            menyelesaikan berbagai masalah hukum.
+                            Tri Sulasmono, S.H. & Partners adalah kantor hukum yang berkomitmen untuk memberikan layanan
+                            hukum terbaik
+                            dengan integritas tinggi.
                         </p>
                         <p class="text-gray-700 mb-6 leading-relaxed">
                             Tim kami terdiri dari pengacara-pengacara berpengalaman yang ahli di bidangnya masing-masing,
-                            siap memberikan solusi hukum yang tepat dan efektif untuk kebutuhan Anda.
+                            siap memberikan solusi hukum yang tepat dan efektif untuk kebutuhan Anda. Tri Sulasmono, S.H. &
+                            Partners telah membantu klien dalam
+                            menyelesaikan berbagai masalah hukum.
                         </p>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="bg-blue-50 p-4 rounded-lg">
@@ -149,7 +150,7 @@
                                     <i class="fas fa-star text-blue-600 text-2xl mr-3"></i>
                                     <span class="font-bold text-blue-900">Terpercaya</span>
                                 </div>
-                                <p class="text-sm text-gray-600 mt-2">Lebih dari 1.000 klien telah mempercayakan kasus
+                                <p class="text-sm text-gray-600 mt-2">Banyak klien telah mempercayakan kasus
                                     mereka pada kami</p>
                             </div>
                         </div>
@@ -169,7 +170,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div
                         class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                        <div class="text-5xl font-bold mb-2 count-up" data-count="1000">0</div>
+                        <div class="text-5xl font-bold mb-2 count-up" data-count="100">0</div>
                         <div class="text-xl">Kasus Diselesaikan</div>
                     </div>
                     <div
@@ -219,6 +220,10 @@
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
                                     <span>Penyidikan & Penahanan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Pra Peradilan</span>
                                 </li>
                             </ul>
                         </div>
@@ -333,9 +338,10 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-600 italic mb-6">"Tim Advokat & Partners sangat profesional dalam menangani
-                            kasus bisnis saya. Mereka memberikan solusi yang tepat dan efisien. Hasilnya melebihi ekspektasi
-                            saya!"</p>
+                        <p class="text-gray-600 italic mb-6">"Tri Sulasmono, S.H. & Partner sangat profesional dalam
+                            menangani
+                            kasus bisnis saya. Mereka memberikan solusi yang tepat dan efisien. Hasilnya sangat memuaskan
+                            saya dan para pemegang saham."</p>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -346,7 +352,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Budi Santoso</h4>
-                                <p class="text-gray-500 text-sm">Direktur PT Maju Jaya</p>
+                                <p class="text-gray-500 text-sm">Direktur PT</p>
                             </div>
                         </div>
                     </div>
@@ -362,8 +368,10 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-600 italic mb-6">"Saya sangat berterima kasih kepada Advokat & Partners yang
-                            telah membantu saya memenangkan kasus perceraian dengan hasil yang adil untuk kedua belah
+                        <p class="text-gray-600 italic mb-6">"Saya sangat berterima kasih kepada Tri Sulasmono, S.H. &
+                            Partner yang
+                            telah membantu saya menyelesaikan kasus perceraian, hak asuh anak, dan waris dengan hasil yang
+                            adil untuk kedua belah
                             pihak."</p>
                         <div class="flex items-center mt-4">
                             <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
@@ -375,7 +383,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Dewi Lestari</h4>
-                                <p class="text-gray-500 text-sm">Guru</p>
+                                <p class="text-gray-500 text-sm">Dokter Umum</p>
                             </div>
                         </div>
                     </div>
@@ -392,7 +400,8 @@
                             </div>
                         </div>
                         <p class="text-gray-600 italic mb-6">"Kasus pidana yang saya hadapi sangat kompleks, tapi tim
-                            Advokat & Partners mampu membuktikan ketidakbersalahan saya dengan argumentasi hukum yang kuat."
+                            Tri Sulasmono, S.H. & Partner mampu membuktikan hak-hak saya dengan argumentasi hukum
+                            yang kuat."
                         </p>
                         <div class="flex items-center mt-4">
                             <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
@@ -404,7 +413,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Andi Wijaya</h4>
-                                <p class="text-gray-500 text-sm">Pengusaha</p>
+                                <p class="text-gray-500 text-sm">Karyawan Swasta</p>
                             </div>
                         </div>
                     </div>
@@ -421,7 +430,7 @@
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
                     <img src="{{ asset('images/peradi.png') }}" alt="PERADI"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="{{ asset('images/ikading.png') }}" alt="Kemenkumham"
+                    <img src="{{ asset('images/ikadin.png') }}" alt="Kemenkumham"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/kai.png') }}" alt="LBH"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
@@ -525,8 +534,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Jam Operasional</h4>
-                                        <p class="text-gray-600">Senin - Jumat: 08.00 - 17.00 WIB<br>Sabtu: 09.00 - 15.00
-                                            WIB<br>Minggu: Tutup</p>
+                                        <p class="text-gray-600">Senin - Sabtu: Janji Temu <br> Minggu: Tutup</p>
                                     </div>
                                 </div>
                             </div>
@@ -582,7 +590,7 @@
                         counter.innerText = Math.ceil(count + increment);
                         setTimeout(animateCounters, 1);
                     } else {
-                        counter.innerText = target;
+                        counter.innerText = target + '+-';
                     }
                 });
             }
