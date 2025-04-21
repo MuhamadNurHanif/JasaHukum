@@ -434,6 +434,8 @@
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/kai.png') }}" alt="LBH"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="{{ asset('images/peradi.jpeg') }}" alt="LBH"
+                        class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                 </div>
             </div>
         </section>
