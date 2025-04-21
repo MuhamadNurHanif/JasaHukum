@@ -8,7 +8,7 @@
                     <span class="font-bold text-xl">Tri Sulasmono, S.H. & Partner</span>
                 </div>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-center space-x-4">
                 <a href="#home" class="hover:text-blue-300 transition duration-300">Beranda</a>
                 <a href="#about" class="hover:text-blue-300 transition duration-300">Tentang Kami</a>
                 <a href="#services" class="hover:text-blue-300 transition duration-300">Layanan</a>
