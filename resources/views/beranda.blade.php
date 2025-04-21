@@ -430,7 +430,8 @@
 
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="md:w-1/2">
-                        <form class="bg-white p-8 rounded-lg shadow-lg">
+                        <form method="POST" class="bg-white p-8 rounded-lg shadow-lg" action="#">
+                            
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
                                 <input type="text" id="name"
@@ -521,7 +522,7 @@
                             </div>
 
                             <div class="mt-8">
-                                <h4 class="font-bold text-blue-900 mb-4">Ikuti Kami</h4>
+                                <h4 class="font-bol d text-blue-900 mb-4">Ikuti Kami</h4>
                                 <div class="flex space-x-4">
                                     <a href="#"
                                         class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">

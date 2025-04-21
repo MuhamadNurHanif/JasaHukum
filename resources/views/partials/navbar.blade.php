@@ -70,7 +70,7 @@
             <div class="flex items-center space-x-4">
                 <div class="flex items-center">
                     <i class="fas fa-balance-scale text-2xl mr-2 text-blue-300"></i>
-                    <span class="font-bold text-xl">ADVOKAT & PARTNERS</span>
+                    <span class="font-bold text-xl">Tri Sulasmono, S.H. & Partner</span>
                 </div>
             </div>
             <div class="hidden md:flex items-center space-x-8">
