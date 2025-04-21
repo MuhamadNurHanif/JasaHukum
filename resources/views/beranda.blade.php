@@ -83,11 +83,11 @@
                 <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Tim pengacara berpengalaman siap memberikan solusi
                     hukum terbaik untuk berbagai masalah hukum yang Anda hadapi.</p>
                 <div class="flex flex-col md:flex-row justify-center gap-4">
-                    <a href="#contact"
+                    <a href="tel:+62859106953875"
                         class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
                         Konsultasi Gratis Sekarang
                     </a>
-                    <a href="tel:+6281234567890"
+                    <a href="tel:+62859106953875"
                         class="bg-transparent hover:bg-white hover:text-blue-900 text-white font-bold py-4 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105">
                         Hubungi Tim Hukum Kami
                     </a>
@@ -337,8 +337,13 @@
                             kasus bisnis saya. Mereka memberikan solusi yang tepat dan efisien. Hasilnya melebihi ekspektasi
                             saya!"</p>
                         <div class="flex items-center">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client"
-                                class="w-12 h-12 rounded-full mr-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Budi Santoso</h4>
                                 <p class="text-gray-500 text-sm">Direktur PT Maju Jaya</p>
@@ -360,9 +365,14 @@
                         <p class="text-gray-600 italic mb-6">"Saya sangat berterima kasih kepada Advokat & Partners yang
                             telah membantu saya memenangkan kasus perceraian dengan hasil yang adil untuk kedua belah
                             pihak."</p>
-                        <div class="flex items-center">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client"
-                                class="w-12 h-12 rounded-full mr-4">
+                        <div class="flex items-center mt-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Dewi Lestari</h4>
                                 <p class="text-gray-500 text-sm">Guru</p>
@@ -384,9 +394,14 @@
                         <p class="text-gray-600 italic mb-6">"Kasus pidana yang saya hadapi sangat kompleks, tapi tim
                             Advokat & Partners mampu membuktikan ketidakbersalahan saya dengan argumentasi hukum yang kuat."
                         </p>
-                        <div class="flex items-center">
-                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client"
-                                class="w-12 h-12 rounded-full mr-4">
+                        <div class="flex items-center mt-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-bold text-blue-900">Andi Wijaya</h4>
                                 <p class="text-gray-500 text-sm">Pengusaha</p>
@@ -404,15 +419,11 @@
                     <h3 class="text-xl text-gray-600">Bekerja Sama Dengan</h3>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-                    <img src="https://via.placeholder.com/150x80?text=PERADI" alt="PERADI"
+                    <img src="{{ asset('images/peradi.png') }}" alt="PERADI"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="https://via.placeholder.com/150x80?text=Kemenkumham" alt="Kemenkumham"
+                    <img src="{{ asset('images/ikading.png') }}" alt="Kemenkumham"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="https://via.placeholder.com/150x80?text=LBH" alt="LBH"
-                        class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="https://via.placeholder.com/150x80?text=AAI" alt="AAI"
-                        class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="https://via.placeholder.com/150x80?text=KADIN" alt="KADIN"
+                    <img src="{{ asset('images/kai.png') }}" alt="LBH"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                 </div>
             </div>
@@ -431,7 +442,7 @@
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="md:w-1/2">
                         <form method="POST" class="bg-white p-8 rounded-lg shadow-lg" action="#">
-                            
+
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
                                 <input type="text" id="name"
@@ -483,8 +494,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Alamat Kantor</h4>
-                                        <p class="text-gray-600">Jl. Hukum No. 123, Jakarta Pusat<br>Gedung Justice Tower
-                                            Lt. 15</p>
+                                        <p class="text-gray-600">Kertosari, Kabupaten Banyuwangi, Jawa Timur</p>
                                     </div>
                                 </div>
 
@@ -494,7 +504,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Telepon</h4>
-                                        <p class="text-gray-600">(021) 1234-5678<br>+62 812-3456-7890 (24 Jam)</p>
+                                        <p class="text-gray-600">+62 859-1069-53875 (24 Jam)</p>
                                     </div>
                                 </div>
 
@@ -504,7 +514,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Email</h4>
-                                        <p class="text-gray-600">info@advokatpartners.com<br>consult@advokatpartners.com
+                                        <p class="text-gray-600">trisulasmono@gmail.com
                                         </p>
                                     </div>
                                 </div>

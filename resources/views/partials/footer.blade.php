@@ -1,7 +1,7 @@
  <!-- Map Section -->
  <div class="h-96 w-full">
      <iframe
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81916135000004!3d-6.194741999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1623393957719!5m2!1sen!2sid"
+         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3948.722038381301!2d114.37507207500968!3d-8.230681991802141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTMnNTAuNSJTIDExNMKwMjInMzkuNSJF!5e0!3m2!1sid!2sid!4v1745218517363!5m2!1sid!2sid"
          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
  </div>
 
@@ -12,7 +12,7 @@
              <div>
                  <div class="flex items-center mb-4">
                      <i class="fas fa-balance-scale text-2xl mr-2 text-blue-300"></i>
-                     <span class="font-bold text-xl">ADVOKAT & PARTNERS</span>
+                     <span class="font-bold text-xl">Tri Sulasmono S.H & Partner</span>
                  </div>
                  <p class="text-blue-200">Kantor hukum profesional yang berkomitmen memberikan solusi hukum terbaik
                      untuk klien kami.</p>
