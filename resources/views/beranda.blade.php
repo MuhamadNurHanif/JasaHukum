@@ -425,7 +425,7 @@
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h3 class="text-xl text-gray-600">Mitra organisasi kami:</h3>
+                    <h3 class="text-xl text-gray-600">Mitra organisasi advokat kami:</h3>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
                     <img src="{{ asset('images/peradi.png') }}" alt="PERADI"
