@@ -83,11 +83,11 @@
                 <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Tim pengacara berpengalaman siap memberikan solusi
                     hukum terbaik untuk berbagai masalah hukum yang Anda hadapi.</p>
                 <div class="flex flex-col md:flex-row justify-center gap-4">
-                    <a href="tel:+62859106953875"
+                    <a href="https://wa.me/62859106953875"
                         class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
                         Konsultasi Sekarang
                     </a>
-                    <a href="tel:+62859106953875"
+                    <a href="#contact"
                         class="bg-transparent hover:bg-white hover:text-blue-900 text-white font-bold py-4 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105">
                         Hubungi Tim Hukum Kami
                     </a>
@@ -452,39 +452,38 @@
 
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="md:w-1/2">
-                        <form method="POST" class="bg-white p-8 rounded-lg shadow-lg" action="#">
-
+                        <form onsubmit="return sendEmail(event)" class="bg-white p-8 rounded-lg shadow-lg">
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
-                                <input type="text" id="name"
+                                <input name="name" type="text" id="name"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                                <input type="email" id="email"
+                                <input name="email" type="email" id="email"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div class="mb-4">
                                 <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
-                                <input type="tel" id="phone"
+                                <input name="phone" type="tel" id="phone"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div class="mb-4">
                                 <label for="service" class="block text-gray-700 font-medium mb-2">Jenis Layanan</label>
-                                <select id="service"
+                                <select name="service" id="service"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option value="">Pilih Layanan</option>
-                                    <option value="pidana">Hukum Pidana</option>
-                                    <option value="perdata">Hukum Perdata</option>
-                                    <option value="bisnis">Hukum Bisnis</option>
-                                    <option value="keluarga">Hukum Keluarga</option>
-                                    <option value="properti">Hukum Properti</option>
-                                    <option value="lainnya">Lainnya</option>
+                                    <option value="Hukum Pidana">Hukum Pidana</option>
+                                    <option value="Hukum Perdata">Hukum Perdata</option>
+                                    <option value="Hukum Bisnis">Hukum Bisnis</option>
+                                    <option value="Hukum Keluarga">Hukum Keluarga</option>
+                                    <option value="Hukum Properti">Hukum Properti</option>
+                                    <option value="Lainnya">Lainnya</option>
                                 </select>
                             </div>
                             <div class="mb-6">
                                 <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
-                                <textarea id="message" rows="4"
+                                <textarea name="message" id="message" rows="4"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                             </div>
                             <button type="submit"
@@ -571,7 +570,6 @@
 
         <!-- JavaScript -->
         <script>
-            // Mobile menu toggle
             const btn = document.querySelector(".mobile-menu-button");
             const menu = document.querySelector(".mobile-menu");
 
@@ -579,7 +577,6 @@
                 menu.classList.toggle("hidden");
             });
 
-            // Count up animation for stats
             const counters = document.querySelectorAll('.count-up');
             const speed = 200;
 
@@ -601,7 +598,6 @@
                 });
             }
 
-            // Only start counting when section is in view
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -617,7 +613,6 @@
                 observer.observe(counter);
             });
 
-            // Smooth scroll for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -631,13 +626,40 @@
                             behavior: 'smooth'
                         });
 
-                        // Close mobile menu if open
                         if (!menu.classList.contains('hidden')) {
                             menu.classList.add('hidden');
                         }
                     }
                 });
             });
+        </script>
+        <script>
+            function sendEmail(event) {
+                event.preventDefault();
+
+                const name = document.querySelector('#name').value;
+                const email = document.querySelector('#email').value;
+                const phone = document.querySelector('#phone').value;
+                const service = document.querySelector('#service').value;
+                const message = document.querySelector('#message').value;
+
+                const subject = `Permintaan Layanan: ${service}`;
+                const body = `
+            Nama: ${name}
+            Email: ${email}
+            No. HP: ${phone}
+            Jenis Layanan: ${service}
+            
+            Pesan:
+            ${message}
+            `.trim();
+
+                const mailtoLink =
+                    `https://mail.google.com/mail/?view=cm&to=trisulasmono@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                window.open(mailtoLink, '_blank'); 
+                return false;
+            }
         </script>
     </body>
 @endsection
