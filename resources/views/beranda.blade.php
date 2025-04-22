@@ -282,6 +282,84 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Service 4 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        <div class="h-48 bg-blue-700 flex items-center justify-center">
+                            <i class="fas fa-file-invoice-dollar text-white text-6xl mb-4"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Pajak</h3>
+                            <p class="text-gray-600 mb-4">Layanan yang membantu individu dan perusahaan dalam mematuhi
+                                peraturan perundang-undangan dan menyelesaikan sengketa terkait pajak .</p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Layanan hukum pajak mencakup konsultasi</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>penyusunan laporan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>pengajuan permohonan keringanan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>keberatan dan banding atas keputusan pajak</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>pendampingan audit</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>serta penyelesaian sengketa pajak di pengadilan</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        <div class="h-48 bg-blue-700 flex items-center justify-center">
+                            <i class="fas fa-person-digging text-white text-6xl mb-4"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Pertambangan</h3>
+                            <p class="text-gray-600 mb-4">Layanan yang membantu individu dan perusahaan dalam mematuhi
+                                peraturan perundang-undangan dan menyelesaikan sengketa terkait Pertambangan</p>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Perizinan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Penyusunan kontrak</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Penyelesaian sengketa</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>serta pendampingan terkait kepatuhan terhadap hukum lingkungan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>tata ruang</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Ketenagakerjaan dalam aktivitas pertambangan</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Additional Services -->
@@ -657,7 +735,7 @@
                 const mailtoLink =
                     `https://mail.google.com/mail/?view=cm&to=trisulasmono@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-                window.open(mailtoLink, '_blank'); 
+                window.open(mailtoLink, '_blank');
                 return false;
             }
         </script>
