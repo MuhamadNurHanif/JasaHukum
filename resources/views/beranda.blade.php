@@ -180,7 +180,7 @@
                     </div>
                     <div
                         class="bg-blue-800 bg-opacity-70 p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                        <div class="text-5xl font-bold mb-2 count-up" data-count="5" data-suffix="+">0</div>
+                        <div class="text-5xl font-bold mb-2 count-up" data-count="5" data-prefix=">">0</div>
                         <div class="text-xl">Tahun Pengalaman</div>
                     </div>
                 </div>
@@ -586,19 +586,20 @@
             function animateCounters() {
                 counters.forEach(counter => {
                     const target = +counter.getAttribute('data-count');
+                    const prefix = counter.getAttribute('data-prefix') || '';
                     const suffix = counter.getAttribute('data-suffix') || '';
-                    const count = parseInt(counter.innerText.replace(/\D/g, '')) || 0;
+                    const currentText = counter.innerText.replace(/\D/g, '');
+                    const count = parseInt(currentText) || 0;
                     const increment = target / speed;
 
                     if (count < target) {
-                        counter.innerText = Math.ceil(count + increment) + suffix;
+                        counter.innerText = prefix + Math.ceil(count + increment) + suffix;
                         setTimeout(animateCounters, 1);
                     } else {
-                        counter.innerText = target + suffix;
+                        counter.innerText = prefix + target + suffix;
                     }
                 });
             }
-
 
             // Only start counting when section is in view
             const observer = new IntersectionObserver((entries) => {
