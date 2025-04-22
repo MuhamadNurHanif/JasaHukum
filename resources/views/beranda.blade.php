@@ -347,11 +347,8 @@
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>serta pendampingan terkait kepatuhan terhadap hukum lingkungan</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>tata ruang</span>
+                                    <span>serta pendampingan terkait kepatuhan terhadap hukum lingkungan dan tata
+                                        ruang</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
