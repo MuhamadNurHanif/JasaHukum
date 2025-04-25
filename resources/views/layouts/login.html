@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Office Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .sidebar {
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-collapsed {
+            width: 80px;
+        }
+
+        .sidebar-collapsed .menu-text {
+            display: none;
+        }
+
+        .sidebar-collapsed .logo-text {
+            display: none;
+        }
+
+        .sidebar-collapsed .menu-item {
+            justify-content: center;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+
+        .gradient-btn {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            transition: all 0.3s ease;
+        }
+
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            transform: translateY(-2px);
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Login Page -->
+    <div id="login-page" class="min-h-screen flex flex-col md:flex-row">
+        <!-- Left Side - Image Section -->
+        <div class="w-full md:w-1/2 gradient-bg flex flex-col items-center justify-center p-8 text-white">
+            <div class="max-w-md text-center">
+                <img src="https://img.freepik.com/free-vector/lawyer-concept-illustration_114360-7478.jpg"
+                    alt="Lawyer Illustration" class="w-full h-auto mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Sistem Pengelolaan Kantor Hukum</h1>
+                <p class="text-lg opacity-90">Kelola data hukum secara terstruktur dan profesional</p>
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="w-full md:w-1/2 bg-white flex items-center justify-center p-8">
+            <div class="w-full max-w-md">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Masuk sebagai Admin</h2>
+
+                <form class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-envelope text-gray-400"></i>
+                            </div>
+                            <input type="email" id="email" name="email" required
+                                class="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-lock text-gray-400"></i>
+                            </div>
+                            <input type="password" id="password" name="password" required
+                                class="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                            class="gradient-btn w-full py-3 px-4 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition duration-200">
+                            Masuk
+                        </button>
+                    </div>
+
+                    <div class="text-center text-sm text-gray-500">
+                        <p>Lupa password? <span class="text-blue-600 hover:text-blue-800 cursor-pointer">Hubungi
+                                administrator.</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Structure (Hidden by default) -->
+    <div id="dashboard" class="hidden min-h-screen flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white w-64 border-r border-blue-200 flex-shrink-0">
+            <div class="p-4 border-b border-blue-100 flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <i class="fas fa-balance-scale text-blue-600"></i>
+                </div>
+                <span class="logo-text text-xl font-bold text-blue-800">LawOffice</span>
+            </div>
+
+            <div class="p-4 space-y-1">
+                <!-- Main Menu -->
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-tachometer-alt w-5 text-center"></i>
+                    <span class="menu-text">Dashboard Utama</span>
+                </div>
+
+                <!-- Data Section -->
+                <div class="mt-4 text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 menu-text">Data</div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-users w-5 text-center"></i>
+                    <span class="menu-text">Data Klien</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-user-tie w-5 text-center"></i>
+                    <span class="menu-text">Data Pengacara</span>
+                </div>
+
+                <!-- Documents Section -->
+                <div class="mt-4 text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 menu-text">Dokumen
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-file-signature w-5 text-center"></i>
+                    <span class="menu-text">Surat Kuasa</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-file-invoice-dollar w-5 text-center"></i>
+                    <span class="menu-text">Surat Anggaran Biaya</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-money-bill-wave w-5 text-center"></i>
+                    <span class="menu-text">Pembayaran</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-landmark w-5 text-center"></i>
+                    <span class="menu-text">Surat Sengketa Tanah</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-gavel w-5 text-center"></i>
+                    <span class="menu-text">Surat Somasi</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-handshake w-5 text-center"></i>
+                    <span class="menu-text">Surat Perjanjian</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-file-invoice w-5 text-center"></i>
+                    <span class="menu-text">Surat Utang Piutang</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-scroll w-5 text-center"></i>
+                    <span class="menu-text">Surat Warisan</span>
+                </div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-file-export w-5 text-center"></i>
+                    <span class="menu-text">Surat Pencabutan Kuasa</span>
+                </div>
+
+                <!-- View & Print Section -->
+                <div class="mt-4 text-xs font-semibold text-gray-500 uppercase tracking-wider px-3 menu-text">Lihat &
+                    Cetak</div>
+                <div
+                    class="menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 cursor-pointer text-blue-800">
+                    <i class="fas fa-print w-5 text-center"></i>
+                    <span class="menu-text">Lihat & Cetak Dokumen</span>
+                </div>
+
+                <!-- Logout -->
+                <div
+                    class="mt-8 menu-item flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 cursor-pointer text-red-600">
+                    <i class="fas fa-sign-out-alt w-5 text-center"></i>
+                    <span class="menu-text">Logout</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Top Navbar -->
+            <header class="gradient-bg text-white shadow-sm">
+                <div class="flex items-center justify-between px-6 py-3">
+                    <div class="flex items-center space-x-4">
+                        <button id="sidebar-toggle" class="md:hidden text-white focus:outline-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <h1 id="page-title" class="text-xl font-semibold">Dashboard Utama</h1>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <div class="flex items-center space-x-2 cursor-pointer">
+                                <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center">
+                                    <i class="fas fa-user text-blue-700"></i>
+                                </div>
+                                <span class="font-medium">Admin</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </div>
+                            <!-- Dropdown would go here -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+                <!-- Breadcrumb -->
+                <div class="flex items-center text-sm text-gray-600 mb-6">
+                    <span class="hover:text-blue-600 cursor-pointer">Dashboard</span>
+                    <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                    <span class="text-blue-600">Utama</span>
+                </div>
+
+                <!-- Page Header -->
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Dashboard Utama</h2>
+                    <button class="gradient-btn px-4 py-2 text-white rounded-lg flex items-center space-x-2">
+                        <i class="fas fa-plus"></i>
+                        <span>Tambah Data</span>
+                    </button>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white card-shadow rounded-xl p-6 border-l-4 border-blue-500">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-sm text-gray-500">Total Klien</p>
+                                <h3 class="text-2xl font-bold mt-1">124</h3>
+                            </div>
+                            <div class="p-3 rounded-full bg-blue-50 text-blue-600">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2"><span class="text-green-500">+12%</span> dari bulan lalu
+                        </p>
+                    </div>
+
+                    <div class="bg-white card-shadow rounded-xl p-6 border-l-4 border-green-500">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-sm text-gray-500">Kasus Aktif</p>
+                                <h3 class="text-2xl font-bold mt-1">42</h3>
+                            </div>
+                            <div class="p-3 rounded-full bg-green-50 text-green-600">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2"><span class="text-green-500">+5%</span> dari bulan lalu
+                        </p>
+                    </div>
+
+                    <div class="bg-white card-shadow rounded-xl p-6 border-l-4 border-yellow-500">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-sm text-gray-500">Dokumen Bulan Ini</p>
+                                <h3 class="text-2xl font-bold mt-1">87</h3>
+                            </div>
+                            <div class="p-3 rounded-full bg-yellow-50 text-yellow-600">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2"><span class="text-red-500">-3%</span> dari bulan lalu</p>
+                    </div>
+
+                    <div class="bg-white card-shadow rounded-xl p-6 border-l-4 border-purple-500">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-sm text-gray-500">Pendapatan</p>
+                                <h3 class="text-2xl font-bold mt-1">Rp 48.7jt</h3>
+                            </div>
+                            <div class="p-3 rounded-full bg-purple-50 text-purple-600">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2"><span class="text-green-500">+18%</span> dari bulan lalu
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recent Documents Table -->
+                <div class="bg-white card-shadow rounded-xl overflow-hidden">
+                    <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Dokumen Terbaru</h3>
+                        <button class="text-sm text-blue-600 hover:text-blue-800">Lihat Semua</button>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        No.</th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Jenis Dokumen</th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Klien</th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Tanggal</th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Status</th>
+                                    <th scope="col"
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Surat
+                                        Kuasa</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Budi Santoso</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">15 Jun 2023</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Selesai</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        <button class="text-blue-600 hover:text-blue-900 mr-3"><i
+                                                class="fas fa-eye"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i
+                                                class="fas fa-print"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Surat
+                                        Somasi</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PT. Maju Jaya</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">14 Jun 2023</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Proses</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        <button class="text-blue-600 hover:text-blue-900 mr-3"><i
+                                                class="fas fa-eye"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i
+                                                class="fas fa-print"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Surat
+                                        Perjanjian</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Anita Rahayu</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">12 Jun 2023</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Selesai</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        <button class="text-blue-600 hover:text-blue-900 mr-3"><i
+                                                class="fas fa-eye"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-900"><i
+                                                class="fas fa-print"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Toggle sidebar on mobile
+        document.getElementById('sidebar-toggle').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('sidebar-collapsed');
+        });
+
+        // Simulate login (for demo purposes)
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('login-page').classList.add('hidden');
+            document.getElementById('dashboard').classList.remove('hidden');
+        });
+
+        // Change page title when menu is clicked
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const menuText = this.querySelector('.menu-text').textContent;
+                document.getElementById('page-title').textContent = menuText;
+
+                // Update breadcrumb
+                document.querySelector('.breadcrumb').innerHTML = `
+                    <span class="hover:text-blue-600 cursor-pointer">Dashboard</span>
+                    <i class="fas fa-chevron-right mx-2 text-xs"></i>
+                    <span class="text-blue-600">${menuText}</span>
+                `;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
