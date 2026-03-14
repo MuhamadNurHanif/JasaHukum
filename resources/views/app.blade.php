@@ -22,13 +22,13 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:description" content="Jasa bantuan hukum terpercaya dan profesional.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content={{ asset('images/Logo.jpg') }}>
+    <meta property="og:image" content={{ asset('images/logoterbaru.png') }}>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@themesberg" />
     <meta name="twitter:creator" content="@themesberg" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="{{ asset('images/Logo.jpg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/logoterbaru.png') }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script async defer src="https://buttons.github.io/buttons.js"></script>

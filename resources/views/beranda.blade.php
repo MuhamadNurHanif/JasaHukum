@@ -579,8 +579,8 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Alamat Kantor</h4>
-                                        <p class="text-gray-600">Perumahan Kertosari Land Blok C No. 12 Banyuwangi, Jawa
-                                            Timur 68418</p>
+                                        <p class="text-gray-600">Dusun Krajan RT.001 RW.009 Desa Dadapan Kecamatan Kabat
+                                            Kabupaten Banyuwangi Provinsi Jawa Timur Indonesia Kode Pos 68461</p>
                                     </div>
                                 </div>
 
@@ -724,7 +724,7 @@
             Email: ${email}
             No. HP: ${phone}
             Jenis Layanan: ${service}
-            
+
             Pesan:
             ${message}
             `.trim();
