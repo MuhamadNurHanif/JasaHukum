@@ -28,7 +28,7 @@
     <meta name="twitter:creator" content="@themesberg" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="{{ asset('images/logoterbaru.png') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/logo2.jpeg') }}">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <script async defer src="https://buttons.github.io/buttons.js"></script>

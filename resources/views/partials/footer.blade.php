@@ -12,7 +12,7 @@
              <div>
                  <div class="flex items-center mb-4">
                      {{-- <i class="fas fa-balance-scale text-2xl mr-2 text-blue-300"></i> --}}
-                     <img src="{{ asset('images/logoterbaru.png') }}" class="w-10 h-10 object-contain mr-3">
+                     <img src="{{ asset('images/logo2.jpeg') }}" class="w-10 h-10 object-contain mr-3">
                      <span class="font-bold text-xl">Tri Sulasmono, S.H. & Partner</span>
                  </div>
                  <p class="text-blue-200">Kantor hukum profesional yang berkomitmen memberikan solusi hukum terbaik
