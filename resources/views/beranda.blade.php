@@ -105,7 +105,7 @@
 
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                        <img src="{{ asset('images/profile.jpeg') }}" alt="Tim Advokat" class="rounded-lg shadow-xl w-full">
+                        <img src="{{ asset('images/profil.jpeg') }}" alt="Tim Advokat" class="rounded-lg shadow-xl w-full">
                     </div>
                     <div class="md:w-1/2">
                         <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional</h3>
