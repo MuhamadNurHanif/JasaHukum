@@ -111,13 +111,13 @@
                         <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional</h3>
                         <p class="text-gray-700 mb-4 leading-relaxed">
                             Tri Sulasmono, S.H. & Partner adalah kantor advokat yang berkomitmen untuk memberikan layanan
-                            hukum terbaik
-                            dengan integritas tinggi.
+                            jasa advokat terbaik
+                            dengan integritas yang tinggi.
                         </p>
                         <p class="text-gray-700 mb-6 leading-relaxed">
                             Tim kami terdiri dari pengacara-pengacara berpengalaman yang ahli di bidangnya masing-masing,
                             siap memberikan solusi hukum yang tepat dan efektif untuk kebutuhan Anda. Tri Sulasmono, S.H. &
-                            Partner telah membantu klien dalam
+                            Partner telah membantu kliennya dalam
                             menyelesaikan berbagai masalah hukum.
                         </p>
                         <div class="grid grid-cols-2 gap-4">
@@ -190,7 +190,7 @@
         <section id="services" class="bg-gray-50 py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan Utama</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                     <p class="text-gray-600 max-w-2xl mx-auto mt-4">Advokat kami bertindak sebagai pendamping, pelindung hak hukum, dan penasihat strategis bagi kliennya.</p>
                 </div>
@@ -206,7 +206,7 @@
                         </div>
                         <div class="p-6 flex flex-col h-full">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum</h3>
-                            <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari penyidikan,
+                            <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari pra pradilan, penyidikan,
                                 penuntutan, hingga persidangan.</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
@@ -226,8 +226,8 @@
                                     <span>Menjelaskan risiko-risiko dari setiap opsi tindakan.</span>
                                 </li>
                             </ul>
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum Secara Online</h3>
-                            <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk kenyamanan Anda. Dengan teknologi modern, Anda dapat berkonsultasi dengan tim kami dari mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan nasihat hukum yang Anda butuhkan.</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-4">Konsultasi Hukum Secara Online</h3>
+                            <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk kenyamanan klien. Dengan teknologi modern, klien dapat berkonsultasi dengan tim kami dari mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan nasihat hukum yang klien butuhkan.</p>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
                                    class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
@@ -383,7 +383,7 @@
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi advocate.</span>
+                                    <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi advokat.</span>
                                 </li>
                             </ul>
                             <div class="mt-auto pt-4">
@@ -553,7 +553,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
-                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                        <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
                                 <a href="#"
@@ -603,7 +603,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
-                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                        <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
                                 <a href="#"
@@ -653,7 +653,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
-                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                        <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
                                 <a href="#"
