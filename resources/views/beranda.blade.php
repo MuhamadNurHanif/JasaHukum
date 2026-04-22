@@ -190,7 +190,7 @@
         <section id="services" class="bg-gray-50 py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan Utama Advokat</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan Jasa Utama Advokat</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                     <p class="text-gray-600 max-w-2xl mx-auto mt-4">Seorang advokat bertindak sebagai pendamping, pelindung
                         hak hukum, dan penasihat strategis bagi kliennya.</p>
@@ -199,13 +199,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Service 1 -->
                     <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
                             <img src={{ asset('images/tentangkami.png') }}
                             alt="icon"
                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col h-full">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum</h3>
                             <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari penyidikan,
                                 penuntutan, hingga persidangan.</p>
@@ -229,12 +229,18 @@
                             </ul>
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum Secara Online</h3>
                             <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk kenyamanan Anda. Dengan teknologi modern, Anda dapat berkonsultasi dengan tim kami dari mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan nasihat hukum yang Anda butuhkan.</p>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    Konsultasi Sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 2 -->
                     <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
                             <img src={{ asset('images/tentangkami.png') }}
                             alt="icon"
@@ -261,12 +267,18 @@
                                     <span>PTUN: Menggugat keputusan pejabat tata usaha negara yang merugikan.</span>
                                 </li>
                             </ul>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                   Hubungi Sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 3 -->
                     <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
                             <img src={{ asset('images/tentangkami.png') }}
                             alt="icon"
@@ -289,12 +301,18 @@
                                     <span>Somasi: Menyusun dan mengirimkan surat teguran hukum kepada pihak lawan.</span>
                                 </li>
                             </ul>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                   Telpon sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 4 -->
                     <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
                             <img src={{ asset('images/tentangkami.png') }}
                             alt="icon"
@@ -317,16 +335,19 @@
                                     <span>Contract Drafting: Menyusun, meninjau, dan merevisi kontrak atau perjanjian bisnis.</span>
                                 </li>
                             </ul>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                   Konsultasi sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Service 5 -->
-                    <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
-     alt="icon"
-     class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/tentangkami.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Pengurusan Perizinan dan Administrasi</h3>
@@ -345,10 +366,16 @@
                                     <span>Pendirian badan hukum (PT, Yayasan, atau Firma).</span>
                                 </li>
                             </ul>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                   Hubungi sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
                             <img src={{ asset('images/tentangkami.png') }}
      alt="icon"
@@ -362,6 +389,12 @@
                                     <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi advocate.</span>
                                 </li>
                             </ul>
+                            <div class="mt-auto pt-4">
+                                <a href="https://wa.me/62859106953875"
+                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                   Telpon Sekarang
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -472,7 +505,7 @@
         </section>
 
         {{-- Blog --}}
-        <section class="bg-blue-50 py-20">
+        <section id="blog" class="bg-blue-50 py-20">
             <div class="container mx-auto px-6">
 
                 <!-- Header -->
