@@ -36,17 +36,14 @@
              <div>
                  <h4 class="font-bold text-lg mb-4">Layanan</h4>
                  <ul class="space-y-2">
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Hukum
-                             Pidana</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Hukum
-                             Perdata</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Hukum
-                             Bisnis</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Hukum
-                             Keluarga</a></li>
-                 </ul>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Konsultasi Hukum</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Litigasi</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Non-Litigasi</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pendampingan & Pemeriksaan Hukum</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pengurusan Perizinan dan Administrasi</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Memberikan bantuan hukum secara cuma-cuma</a></li>
+                    </ul>
              </div>
-
              <div>
                  <h4 class="font-bold text-lg mb-4">Berlangganan</h4>
                  <p class="text-blue-200 mb-4">Dapatkan informasi terbaru tentang hukum dan layanan kami.</p>
