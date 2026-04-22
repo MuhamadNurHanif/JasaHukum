@@ -110,14 +110,14 @@
                     <div class="md:w-1/2">
                         <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional</h3>
                         <p class="text-gray-700 mb-4 leading-relaxed">
-                            Tri Sulasmono, S.H. & Partners adalah kantor hukum yang berkomitmen untuk memberikan layanan
+                            Tri Sulasmono, S.H. & Partner adalah kantor advokat yang berkomitmen untuk memberikan layanan
                             hukum terbaik
                             dengan integritas tinggi.
                         </p>
                         <p class="text-gray-700 mb-6 leading-relaxed">
                             Tim kami terdiri dari pengacara-pengacara berpengalaman yang ahli di bidangnya masing-masing,
                             siap memberikan solusi hukum yang tepat dan efektif untuk kebutuhan Anda. Tri Sulasmono, S.H. &
-                            Partners telah membantu klien dalam
+                            Partner telah membantu klien dalam
                             menyelesaikan berbagai masalah hukum.
                         </p>
                         <div class="grid grid-cols-2 gap-4">
@@ -242,7 +242,7 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
+                            <img src={{ asset('images/jasalitigasi.png') }}
                             alt="icon"
                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
@@ -280,7 +280,7 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
+                            <img src={{ asset('images/nonlitigasi.png') }}
                             alt="icon"
                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
@@ -314,7 +314,7 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
+                            <img src={{ asset('images/pendampinganpemeriksaan.png') }}
                             alt="icon"
                             class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
@@ -347,7 +347,7 @@
                     <!-- Service 5 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/perizinan.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Pengurusan Perizinan dan Administrasi</h3>
@@ -377,9 +377,7 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
-     alt="icon"
-     class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/probono.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Memberikan bantuan hukum secara cuma-cuma (Pro Bono)</h3>
@@ -725,11 +723,13 @@
                                 <select name="service" id="service"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                                     <option value="">Pilih Layanan</option>
-                                    <option value="Hukum Pidana">Hukum Pidana</option>
-                                    <option value="Hukum Perdata">Hukum Perdata</option>
-                                    <option value="Hukum Bisnis">Hukum Bisnis</option>
-                                    <option value="Hukum Keluarga">Hukum Keluarga</option>
-                                    <option value="Hukum Properti">Hukum Properti</option>
+                                    <option value="Hukum Pidana">Konsultasi Hukum</option>
+                                    <option value="Hukum Perdata">Konsultasi Hukum Secara Online</option>
+                                    <option value="Hukum Bisnis">Jasa Litigasi (Penyelesaian di Pengadilan)</option>
+                                    <option value="Hukum Keluarga">Jasa Non-Litigasi (Layanan di Luar Pengadilan)</option>
+                                    <option value="Hukum Properti">Pendampingan dan Pemeriksaan Hukum (Corporate & Commercial)</option>
+                                    <option value="Hukum Properti">Pengurusan Perizinan dan Administrasi</option>
+                                    <option value="Hukum Properti">Memberikan bantuan hukum secara cuma-cuma (Pro Bono)</option>
                                     <option value="Lainnya">Lainnya</option>
                                 </select>
                             </div>

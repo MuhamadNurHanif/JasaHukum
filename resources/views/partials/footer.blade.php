@@ -61,7 +61,7 @@
          </div>
 
          <div class="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-             <p class="text-blue-200 text-sm mb-4 md:mb-0">© 2025 Tri Sulasmono S.H . Seluruh hak cipta dilindungi.</p>
+             <p class="text-blue-200 text-sm mb-4 md:mb-0">© 2026 Tri Sulasmono S.H . Seluruh hak cipta dilindungi.</p>
              <div class="flex space-x-6">
                  <a href="#" class="text-blue-200 hover:text-white transition duration-300 text-sm">Kebijakan
                      Privasi</a>
