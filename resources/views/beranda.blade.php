@@ -78,10 +78,10 @@
         <!-- Hero Section -->
         <section id="home" class="hero-section parallax min-h-screen flex items-center justify-center text-white">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Butuh Bantuan Hukum Profesional?<br>Kami Siap
-                    Membela Hak Anda!</h1>
-                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Tim pengacara berpengalaman siap memberikan solusi
-                    hukum terbaik untuk berbagai masalah hukum yang Anda hadapi.</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Anda ingin Konsultasi & Bantuan Hukum!</h1>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Advokat kami siap membela hak Anda!</p>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Advokat kami berpengalaman dan cakap dalam membela hak
+                    klien.</p>
                 <div class="flex flex-col md:flex-row justify-center gap-4">
                     <a href="https://wa.me/62859106953875"
                         class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
@@ -190,66 +190,75 @@
         <section id="services" class="bg-gray-50 py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan Kami</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan Utama Advokat</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Kami menyediakan berbagai layanan hukum profesional
-                        untuk kebutuhan pribadi maupun bisnis Anda</p>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Seorang advokat bertindak sebagai pendamping, pelindung
+                        hak hukum, dan penasihat strategis bagi kliennya.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Service 1 -->
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                        <div class="h-48 bg-blue-900 flex items-center justify-center">
-                            <i class="fas fa-gavel text-white text-6xl"></i>
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+                            alt="icon"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Pidana</h3>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum</h3>
                             <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari penyidikan,
                                 penuntutan, hingga persidangan.</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Pengadilan & Banding</span>
+                                    <span>Memberikan nasihat atau penjelasan mengenai permasalahan hukum yang sedang dihadapi.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Pembelaan Terbaik</span>
+                                    <span>Menganalisis posisi hukum klien.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Penyidikan & Penahanan</span>
+                                    <span>Memberikan solusi atau langkah hukum yang paling efisien.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Pra Peradilan</span>
+                                    <span>Menjelaskan risiko-risiko dari setiap opsi tindakan.</span>
                                 </li>
                             </ul>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum Secara Online</h3>
+                            <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk kenyamanan Anda. Dengan teknologi modern, Anda dapat berkonsultasi dengan tim kami dari mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan nasihat hukum yang Anda butuhkan.</p>
                         </div>
                     </div>
 
                     <!-- Service 2 -->
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                        <div class="h-48 bg-blue-800 flex items-center justify-center">
-                            <i class="fas fa-handshake text-white text-6xl"></i>
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+                            alt="icon"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Perdata</h3>
-                            <p class="text-gray-600 mb-4">Penyelesaian sengketa perdata termasuk kontrak, utang piutang,
-                                waris, dan perjanjian.</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Jasa Litigasi  (Penyelesaian di Pengadilan)</h3>
+                            <p class="text-gray-600 mb-4">Mewakili dan membela kepentingan klien dalam proses persidangan:</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Gugatan Perdata</span>
+                                    <span>Hukum Pidana: Mendampingi saksi, tersangka, atau terdakwa mulai dari kepolisian hingga persidangan.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Penyelesaian Sengketa</span>
+                                    <span>Hukum Perdata: Menangani gugatan wanprestasi (ingkar janji) atau perbuatan melawan hukum.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Kontrak & Perjanjian</span>
+                                    <span>Hukum Keluarga: Mengurus perceraian, hak asuh anak, dan waris.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>PTUN: Menggugat keputusan pejabat tata usaha negara yang merugikan.</span>
                                 </li>
                             </ul>
                         </div>
@@ -258,25 +267,26 @@
                     <!-- Service 3 -->
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                        <div class="h-48 bg-blue-700 flex items-center justify-center">
-                            <i class="fas fa-briefcase text-white text-6xl"></i>
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+                            alt="icon"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Bisnis</h3>
-                            <p class="text-gray-600 mb-4">Layanan hukum komprehensif untuk bisnis Anda termasuk pendirian
-                                perusahaan dan M&A.</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Jasa Non-Litigasi (Layanan di Luar Pengadilan)</h3>
+                            <p class="text-gray-600 mb-4">Penyelesaian masalah tanpa melalui proses persidangan formal:</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Pendirian Perusahaan</span>
+                                    <span>Negosiasi: Menjadi penengah untuk mencapai kesepakatan damai antar pihak yang bersengketa.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Merger & Akuisisi</span>
+                                    <span>Mediasi & Arbitrase: Mewakili klien dalam forum alternatif penyelesaian sengketa.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Kepatuhan Hukum</span>
+                                    <span>Somasi: Menyusun dan mengirimkan surat teguran hukum kepada pihak lawan.</span>
                                 </li>
                             </ul>
                         </div>
@@ -285,37 +295,26 @@
                     <!-- Service 4 -->
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                        <div class="h-48 bg-blue-700 flex items-center justify-center">
-                            <i class="fas fa-file-invoice-dollar text-white text-6xl mb-4"></i>
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+                            alt="icon"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Pajak</h3>
-                            <p class="text-gray-600 mb-4">Layanan yang membantu individu dan perusahaan dalam mematuhi
-                                peraturan perundang-undangan dan menyelesaikan sengketa terkait pajak .</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Pendampingan dan Pemeriksaan Hukum (Corporate & Commercial)</h3>
+                            <p class="text-gray-600 mb-4">Layanan yang biasanya digunakan oleh perusahaan atau pelaku bisnis:</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Layanan hukum pajak mencakup konsultasi</span>
+                                    <span>Legal Audit/Due Diligence: Memeriksa kepatuhan hukum suatu perusahaan secara menyeluruh.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>penyusunan laporan</span>
+                                    <span>Legal Opinion: Memberikan pendapat hukum tertulis sebagai dasar pengambilan kebijakan bisnis.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>pengajuan permohonan keringanan</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>keberatan dan banding atas keputusan pajak</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>pendampingan audit</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>serta penyelesaian sengketa pajak di pengadilan</span>
+                                    <span>Contract Drafting: Menyusun, meninjau, dan merevisi kontrak atau perjanjian bisnis.</span>
                                 </li>
                             </ul>
                         </div>
@@ -324,68 +323,45 @@
                     <!-- Service 5 -->
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                        <div class="h-48 bg-blue-700 flex items-center justify-center">
-                            <i class="fas fa-person-digging text-white text-6xl mb-4"></i>
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+     alt="icon"
+     class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Hukum Pertambangan</h3>
-                            <p class="text-gray-600 mb-4">Layanan yang membantu individu dan perusahaan dalam mematuhi
-                                peraturan perundang-undangan dan menyelesaikan sengketa terkait Pertambangan</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Pengurusan Perizinan dan Administrasi</h3>
+                            <p class="text-gray-600 mb-4">Membantu klien dalam urusan birokrasi yang memiliki aspek hukum:</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Perizinan</span>
+                                    <span>Pendaftaran merek atau Hak Kekayaan Intelektual (HKI).</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Penyusunan kontrak</span>
+                                    <span>Pengurusan izin usaha khusus (seperti Izin Pertambangan atau Izin Ekspor).</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Penyelesaian sengketa</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>serta pendampingan terkait kepatuhan terhadap hukum lingkungan dan tata
-                                        ruang</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Ketenagakerjaan dalam aktivitas pertambangan</span>
+                                    <span>Pendirian badan hukum (PT, Yayasan, atau Firma).</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                <!-- Additional Services -->
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
-                        <i class="fas fa-home text-blue-600 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Hukum Properti</h4>
-                            <p class="text-gray-600 text-sm">Sertifikasi tanah, sengketa properti, jual beli</p>
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                        <div class="h-48 overflow-hidden">
+                            <img src={{ asset('images/tentangkami.png') }}
+     alt="icon"
+     class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
-                        <i class="fas fa-users text-blue-600 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Hukum Keluarga</h4>
-                            <p class="text-gray-600 text-sm">Perceraian, hak asuh anak, waris</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
-                        <i class="fas fa-passport text-blue-600 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Hukum Imigrasi</h4>
-                            <p class="text-gray-600 text-sm">Visa, izin tinggal, kewarganegaraan</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
-                        <i class="fas fa-user-tie text-blue-600 text-2xl mr-4 mt-1"></i>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Hukum Ketenagakerjaan</h4>
-                            <p class="text-gray-600 text-sm">PHK, hak pekerja, perselisihan</p>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Memberikan bantuan hukum secara cuma-cuma (Pro Bono)</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                    <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi advocate.</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -494,6 +470,175 @@
                 </div>
             </div>
         </section>
+
+        {{-- Blog --}}
+        <section class="bg-blue-50 py-20">
+            <div class="container mx-auto px-6">
+
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Blog</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <div class="w-full h-40 flex items-center justify-center text-5xl">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+                                alt="Hukum Bisnis - Pendirian PT" class="w-full h-40 object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <div class="flex items-center gap-3 mb-3 flex-wrap">
+                                <span
+                                    class="text-xs font-semibold uppercase tracking-wide text-blue-700 bg-blue-100 px-3 py-1 rounded-full">Hukum
+                                    Bisnis</span>
+                                <span class="text-gray-400 text-xs flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> 14 April 2025
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-blue-900 text-lg leading-snug mb-3">
+                                Cara Mendirikan PT yang Benar Sesuai Hukum Indonesia
+                            </h3>
+                            <p class="text-gray-600 italic mb-4 flex-1">
+                                "Mendirikan perusahaan bukan hanya soal modal dan ide — ada serangkaian prosedur hukum yang
+                                wajib dipenuhi agar bisnis Anda berjalan aman dan terlindungi secara legal."
+                            </p>
+                            <div class="flex items-center gap-4 text-gray-400 text-xs mb-4">
+                                <span class="flex items-center gap-1"><i class="far fa-eye text-blue-500"></i> 3.241
+                                    pembaca</span>
+                                <span class="flex items-center gap-1"><i class="far fa-comment text-blue-500"></i> 18
+                                    komentar</span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-gray-600" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
+                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Baca <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <div class="w-full h-40 flex items-center justify-center text-5xl">
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300" alt="Hak Asuh Anak"
+                                class="w-full h-40 object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <div class="flex items-center gap-3 mb-3 flex-wrap">
+                                <span
+                                    class="text-xs font-semibold uppercase tracking-wide text-blue-700 bg-blue-100 px-3 py-1 rounded-full">Hukum
+                                    Keluarga</span>
+                                <span class="text-gray-400 text-xs flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> 7 April 2025
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-blue-900 text-lg leading-snug mb-3">
+                                Hak Asuh Anak Pasca Perceraian: Apa yang Perlu Anda Ketahui?
+                            </h3>
+                            <p class="text-gray-600 italic mb-4 flex-1">
+                                "Proses perceraian kerap diiringi pertanyaan mendasar: siapa yang berhak mengasuh anak?
+                                Artikel ini membahas dasar hukum dan faktor penentu keputusan pengadilan."
+                            </p>
+                            <div class="flex items-center gap-4 text-gray-400 text-xs mb-4">
+                                <span class="flex items-center gap-1"><i class="far fa-eye text-blue-500"></i> 5.870
+                                    pembaca</span>
+                                <span class="flex items-center gap-1"><i class="far fa-comment text-blue-500"></i> 34
+                                    komentar</span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-gray-600" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
+                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Baca <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <div class="w-full h-40 flex items-center justify-center text-5xl">
+                            <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb" alt="Hukum Pidana"
+                                class="w-full h-40 object-cover">
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <div class="flex items-center gap-3 mb-3 flex-wrap">
+                                <span
+                                    class="text-xs font-semibold uppercase tracking-wide text-blue-700 bg-blue-100 px-3 py-1 rounded-full">Hukum
+                                    Pidana</span>
+                                <span class="text-gray-400 text-xs flex items-center gap-1">
+                                    <i class="far fa-calendar-alt"></i> 1 April 2025
+                                </span>
+                            </div>
+                            <h3 class="font-bold text-blue-900 text-lg leading-snug mb-3">
+                                Memahami Hak Tersangka dalam Proses Penyidikan Pidana
+                            </h3>
+                            <p class="text-gray-600 italic mb-4 flex-1">
+                                "Setiap warga negara memiliki hak-hak fundamental saat berhadapan dengan proses hukum
+                                pidana. Kenali hak Anda sebelum terlambat."
+                            </p>
+                            <div class="flex items-center gap-4 text-gray-400 text-xs mb-4">
+                                <span class="flex items-center gap-1"><i class="far fa-eye text-blue-500"></i> 2.990
+                                    pembaca</span>
+                                <span class="flex items-center gap-1"><i class="far fa-comment text-blue-500"></i> 12
+                                    komentar</span>
+                            </div>
+                            <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-gray-600" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-blue-900 text-sm">Tri Sulasmono, S.H.</h4>
+                                        <p class="text-gray-500 text-xs">Advocate</p>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+                                    Baca <i class="fas fa-arrow-right text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /grid -->
+            </div><!-- /container -->
+        </section>
+        <!-- End Blog Section -->
+
 
         <!-- Partners Section -->
         <section class="py-12 bg-white">
@@ -618,22 +763,11 @@
                             <div class="mt-8">
                                 <h4 class="font-bol d text-blue-900 mb-4">Ikuti Kami</h4>
                                 <div class="flex space-x-4">
-                                    <a href="#"
+                                    <a href="https://www.facebook.com/share/1CQjGcxujy/"
                                         class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#"
-                                        class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#"
-                                        class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#"
-                                        class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
