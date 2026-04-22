@@ -304,7 +304,7 @@
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Telpon sekarang
+                                   Hubungi sekarang
                                 </a>
                             </div>
                         </div>
@@ -338,7 +338,7 @@
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Konsultasi sekarang
+                                   Hubungi sekarang
                                 </a>
                             </div>
                         </div>
@@ -392,7 +392,7 @@
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Telpon Sekarang
+                                   Hubungi Sekarang
                                 </a>
                             </div>
                         </div>
