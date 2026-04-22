@@ -212,7 +212,7 @@
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Memberikan nasihat atau penjelasan mengenai permasalahan hukum yang sedang dihadapi.</span>
+                                    <span>Memberikan nasihat atau penjelasan mengenai permasalahan hukum yang sedang dihadapi klien.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
