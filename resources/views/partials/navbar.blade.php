@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <div class="flex items-center">
-                    <img src="{{ asset('images/logo2.jpeg') }}" class="w-10 h-10 object-contain mr-3">
+                    <img src="{{ asset('images/logo2-bulat.png') }}" class="w-10 h-10 object-contain mr-3">
                     <span class="font-bold text-xl">TRI SULASMONO, S.H. & PARTNER</span>
                 </div>
             </div>
