@@ -13,7 +13,7 @@
                  <div class="flex items-center mb-4">
                      {{-- <i class="fas fa-balance-scale text-2xl mr-2 text-blue-300"></i> --}}
                      <img src="{{ asset('images/logo2.jpeg') }}" class="w-10 h-10 object-contain mr-3">
-                     <span class="font-bold text-xl">Tri Sulasmono, S.H. & Partner</span>
+                     <span class="font-bold text-xl">TRI SULASMONO, S.H. & PARTNER</span>
                  </div>
                  <p class="text-blue-200">Kantor hukum profesional yang berkomitmen memberikan solusi hukum terbaik
                      untuk klien kami.</p>
@@ -36,13 +36,19 @@
              <div>
                  <h4 class="font-bold text-lg mb-4">Layanan</h4>
                  <ul class="space-y-2">
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Konsultasi Hukum</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Litigasi</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Non-Litigasi</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pendampingan & Pemeriksaan Hukum</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pengurusan Perizinan dan Administrasi</a></li>
-                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Memberikan bantuan hukum secara cuma-cuma</a></li>
-                    </ul>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Konsultasi
+                             Hukum</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Litigasi</a>
+                     </li>
+                     <li><a href="#"
+                             class="text-blue-200 hover:text-white transition duration-300">Non-Litigasi</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pendampingan &
+                             Pemeriksaan Hukum</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Pengurusan
+                             Perizinan dan Administrasi</a></li>
+                     <li><a href="#" class="text-blue-200 hover:text-white transition duration-300">Memberikan
+                             bantuan hukum secara cuma-cuma</a></li>
+                 </ul>
              </div>
              <div>
                  <h4 class="font-bold text-lg mb-4">Berlangganan</h4>
@@ -58,7 +64,8 @@
          </div>
 
          <div class="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-             <p class="text-blue-200 text-sm mb-4 md:mb-0">© 2026 Tri Sulasmono S.H . Seluruh hak cipta dilindungi.</p>
+             <p class="text-blue-200 text-sm mb-4 md:mb-0">© 2026 TRI SULASMONO S.H & PARTNER. Seluruh hak cipta
+                 dilindungi.</p>
              <div class="flex space-x-6">
                  <a href="#" class="text-blue-200 hover:text-white transition duration-300 text-sm">Kebijakan
                      Privasi</a>

@@ -4,7 +4,7 @@
             <div class="flex items-center space-x-4">
                 <div class="flex items-center">
                     <img src="{{ asset('images/logo2.jpeg') }}" class="w-10 h-10 object-contain mr-3">
-                    <span class="font-bold text-xl">Tri Sulasmono, S.H. & Partner</span>
+                    <span class="font-bold text-xl">TRI SULASMONO, S.H. & PARTNER</span>
                 </div>
             </div>
             <div class="hidden md:flex items-center space-x-8">

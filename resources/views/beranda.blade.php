@@ -110,7 +110,7 @@
                     <div class="md:w-1/2">
                         <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Kantor Hukum Profesional</h3>
                         <p class="text-gray-700 mb-4 leading-relaxed">
-                            Tri Sulasmono, S.H. & Partner adalah kantor advokat yang berkomitmen untuk memberikan layanan
+                            TRI SULASMONO, S.H & PARTNER adalah kantor advokat yang berkomitmen untuk memberikan layanan
                             jasa advokat terbaik
                             dengan integritas yang tinggi.
                         </p>
@@ -192,7 +192,8 @@
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Layanan</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Advokat kami bertindak sebagai pendamping, pelindung hak hukum, dan penasihat strategis bagi kliennya.</p>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Advokat kami bertindak sebagai pendamping, pelindung hak
+                        hukum, dan penasihat strategis bagi kliennya.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -200,18 +201,19 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/tentangkami.png') }}
-                            alt="icon"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/tentangkami.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6 flex flex-col h-full">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Konsultasi Hukum</h3>
-                            <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari pra pradilan, penyidikan,
+                            <p class="text-gray-600 mb-4">Pendampingan hukum dalam kasus pidana mulai dari pra pradilan,
+                                penyidikan,
                                 penuntutan, hingga persidangan.</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Memberikan nasihat atau penjelasan mengenai permasalahan hukum yang sedang dihadapi klien.</span>
+                                    <span>Memberikan nasihat atau penjelasan mengenai permasalahan hukum yang sedang
+                                        dihadapi klien.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
@@ -227,10 +229,13 @@
                                 </li>
                             </ul>
                             <h3 class="text-xl font-bold text-blue-900 mb-4">Konsultasi Hukum Secara Online</h3>
-                            <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk kenyamanan klien. Dengan teknologi modern, klien dapat berkonsultasi dengan tim kami dari mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan nasihat hukum yang klien butuhkan.</p>
+                            <p class="text-gray-600 mb-4">Kami menyediakan layanan konsultasi hukum secara online untuk
+                                kenyamanan klien. Dengan teknologi modern, klien dapat berkonsultasi dengan tim kami dari
+                                mana saja tanpa harus mengunjungi kantor kami. Ini adalah solusi praktis untuk mendapatkan
+                                nasihat hukum yang klien butuhkan.</p>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                                    class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
                                     Konsultasi Sekarang
                                 </a>
                             </div>
@@ -241,21 +246,23 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/jasalitigasi.png') }}
-                            alt="icon"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/jasalitigasi.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Litigasi  (Penyelesaian di Pengadilan)</h3>
-                            <p class="text-gray-600 mb-4">Mewakili dan membela kepentingan klien dalam proses persidangan:</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Litigasi (Penyelesaian di Pengadilan)</h3>
+                            <p class="text-gray-600 mb-4">Mewakili dan membela kepentingan klien dalam proses persidangan:
+                            </p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Hukum Pidana: Mendampingi saksi, tersangka, atau terdakwa mulai dari kepolisian hingga persidangan.</span>
+                                    <span>Hukum Pidana: Mendampingi saksi, tersangka, atau terdakwa mulai dari kepolisian
+                                        hingga persidangan.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Hukum Perdata: Menangani gugatan wanprestasi (ingkar janji) atau perbuatan melawan hukum.</span>
+                                    <span>Hukum Perdata: Menangani gugatan wanprestasi (ingkar janji) atau perbuatan melawan
+                                        hukum.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
@@ -268,8 +275,8 @@
                             </ul>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Hubungi Sekarang
+                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                    Hubungi Sekarang
                                 </a>
                             </div>
                         </div>
@@ -279,9 +286,8 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/nonlitigasi.png') }}
-                            alt="icon"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/nonlitigasi.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Non-Litigasi (Layanan di Luar Pengadilan)</h3>
@@ -289,11 +295,13 @@
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Negosiasi: Menjadi penengah untuk mencapai kesepakatan damai antar pihak yang bersengketa.</span>
+                                    <span>Negosiasi: Menjadi penengah untuk mencapai kesepakatan damai antar pihak yang
+                                        bersengketa.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Mediasi & Arbitrase: Mewakili klien dalam forum alternatif penyelesaian sengketa.</span>
+                                    <span>Mediasi & Arbitrase: Mewakili klien dalam forum alternatif penyelesaian
+                                        sengketa.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
@@ -302,8 +310,8 @@
                             </ul>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Hubungi sekarang
+                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                    Hubungi sekarang
                                 </a>
                             </div>
                         </div>
@@ -313,44 +321,51 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/pendampinganpemeriksaan.png') }}
-                            alt="icon"
-                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/pendampinganpemeriksaan.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Pendampingan dan Pemeriksaan Hukum (Corporate & Commercial)</h3>
-                            <p class="text-gray-600 mb-4">Layanan yang biasanya digunakan oleh perusahaan atau pelaku bisnis:</p>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Pendampingan dan Pemeriksaan Hukum (Corporate
+                                & Commercial)</h3>
+                            <p class="text-gray-600 mb-4">Layanan yang biasanya digunakan oleh perusahaan atau pelaku
+                                bisnis:</p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Legal Audit/Due Diligence: Memeriksa kepatuhan hukum suatu perusahaan secara menyeluruh.</span>
+                                    <span>Legal Audit/Due Diligence: Memeriksa kepatuhan hukum suatu perusahaan secara
+                                        menyeluruh.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Legal Opinion: Memberikan pendapat hukum tertulis sebagai dasar pengambilan kebijakan bisnis.</span>
+                                    <span>Legal Opinion: Memberikan pendapat hukum tertulis sebagai dasar pengambilan
+                                        kebijakan bisnis.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Contract Drafting: Menyusun, meninjau, dan merevisi kontrak atau perjanjian bisnis.</span>
+                                    <span>Contract Drafting: Menyusun, meninjau, dan merevisi kontrak atau perjanjian
+                                        bisnis.</span>
                                 </li>
                             </ul>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Hubungi sekarang
+                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                    Hubungi sekarang
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Service 5 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
+                    <div
+                        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/perizinan.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/perizinan.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-blue-900 mb-3">Pengurusan Perizinan dan Administrasi</h3>
-                            <p class="text-gray-600 mb-4">Membantu klien dalam urusan birokrasi yang memiliki aspek hukum:</p>
+                            <p class="text-gray-600 mb-4">Membantu klien dalam urusan birokrasi yang memiliki aspek hukum:
+                            </p>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
@@ -367,8 +382,8 @@
                             </ul>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Hubungi sekarang
+                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                    Hubungi sekarang
                                 </a>
                             </div>
                         </div>
@@ -376,20 +391,23 @@
                     <div
                         class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 flex flex-col">
                         <div class="h-48 overflow-hidden">
-                            <img src={{ asset('images/probono.png') }} alt="icon" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                            <img src={{ asset('images/probono.png') }} alt="icon"
+                                class="w-full h-full object-cover transition duration-500 hover:scale-110">
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-blue-900 mb-3">Memberikan bantuan hukum secara cuma-cuma (Pro Bono)</h3>
+                            <h3 class="text-xl font-bold text-blue-900 mb-3">Memberikan bantuan hukum secara cuma-cuma (Pro
+                                Bono)</h3>
                             <ul class="text-gray-600 space-y-2">
                                 <li class="flex items-start">
                                     <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-                                    <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi advokat.</span>
+                                    <span>Bagi masyarakat yang tidak mampu sebagai bagian dari pengabdian profesi
+                                        advokat.</span>
                                 </li>
                             </ul>
                             <div class="mt-auto pt-4">
                                 <a href="https://wa.me/62859106953875"
-                                   class="block text-center bg-blue-600 text-white py-3 rounded-lg">
-                                   Hubungi Sekarang
+                                    class="block text-center bg-blue-600 text-white py-3 rounded-lg">
+                                    Hubungi Sekarang
                                 </a>
                             </div>
                         </div>
@@ -397,6 +415,43 @@
                 </div>
             </div>
         </section>
+
+        {{-- Promo --}}
+        <section class="bg-blue-50 py-20">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Promo Bulan ini</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                </div>
+
+                <div class="flex justify-center items-center px-4 md:px-8 lg:px-12">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 cursor-pointer w-full md:w-3/4 lg:w-2/3 xl:w-1/2 max-w-4xl mx-auto"
+                        onclick="openPromoModal()">
+                        <img src="{{ asset('images/PosterIklan.png') }}" alt="Promo Poster"
+                            class="w-full h-auto object-cover transition duration-500 hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Modal -->
+        <div id="promoModal"
+            class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-2 md:p-4 lg:p-6 backdrop-blur-sm">
+            <div
+                class="relative w-full max-w-2xl md:max-w-3xl lg:max-w-4xl bg-white rounded-lg shadow-2xl transform transition-all">
+                <button onclick="closePromoModal()"
+                    class="absolute -top-3 -right-3 md:top-2 md:right-2 text-white bg-red-600 hover:bg-red-700 rounded-full p-2 md:p-3 z-10 transition duration-300 shadow-lg">
+                    <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+                <div class="p-2 md:p-4">
+                    <img src="{{ asset('images/PosterIklan.png') }}" alt="Promo Poster Full Size"
+                        class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
 
         <!-- Testimonials -->
         <section class="bg-blue-50 py-20">
@@ -418,7 +473,7 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-600 italic mb-6">"Tri Sulasmono, S.H. & Partner sangat profesional dalam
+                        <p class="text-gray-600 italic mb-6">"TRI SULASMONO, S.H & PARTNER sangat profesional dalam
                             menangani
                             kasus bisnis saya. Mereka memberikan solusi yang tepat dan efisien. Hasilnya sangat memuaskan
                             saya dan para pemegang saham."</p>
@@ -480,7 +535,7 @@
                             </div>
                         </div>
                         <p class="text-gray-600 italic mb-6">"Kasus pidana yang saya hadapi sangat kompleks, tapi tim
-                            Tri Sulasmono, S.H. & Partner mampu membuktikan hak-hak saya dengan argumentasi hukum
+                            TRI SULASMONO, S.H & PARTNER mampu membuktikan hak-hak saya dengan argumentasi hukum
                             yang kuat."
                         </p>
                         <div class="flex items-center mt-4">
@@ -515,7 +570,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div onclick="location.href='{{ url('/blog/cara-mendirikan-pt-yang-benar-sesuai-hukum-indonesia') }}'"
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl">
                         <div class="w-full h-40 flex items-center justify-center text-5xl">
                             <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
                                 alt="Hukum Bisnis - Pendirian PT" class="w-full h-40 object-cover">
@@ -556,16 +612,17 @@
                                         <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
-                                <a href="#"
+                                <span
                                     class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
                                     Baca <i class="fas fa-arrow-right text-xs"></i>
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div onclick="location.href='{{ url('/blog/hak-asuh-anak-pasca-perceraian') }}'"
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl">
                         <div class="w-full h-40 flex items-center justify-center text-5xl">
                             <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300" alt="Hak Asuh Anak"
                                 class="w-full h-40 object-cover">
@@ -606,16 +663,17 @@
                                         <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
-                                <a href="#"
+                                <span
                                     class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
                                     Baca <i class="fas fa-arrow-right text-xs"></i>
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                    <div onclick="location.href='{{ url('/blog/memahami-hak-tersangka-dalam-proses-penyidikan-pidana') }}'"
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-xl">
                         <div class="w-full h-40 flex items-center justify-center text-5xl">
                             <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb" alt="Hukum Pidana"
                                 class="w-full h-40 object-cover">
@@ -656,10 +714,10 @@
                                         <p class="text-gray-500 text-xs">advokat</p>
                                     </div>
                                 </div>
-                                <a href="#"
+                                <span
                                     class="text-blue-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">
                                     Baca <i class="fas fa-arrow-right text-xs"></i>
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -673,8 +731,9 @@
         <!-- Partners Section -->
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h3 class="text-xl text-gray-600">Mitra organisasi advokat kami:</h3>
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Mitra organisasi advokat kami:</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
                     <img src="{{ asset('images/peradi.png') }}" alt="PERADI"
@@ -683,7 +742,7 @@
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/kai.png') }}" alt="LBH"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="{{ asset('images/peradi2.jpeg') }}" alt="peradi"
+                    <img src="{{ asset('images/PERADI NUSANTARA.jpeg') }}" alt="peradi"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                 </div>
             </div>
@@ -726,7 +785,8 @@
                                     <option value="Hukum Pidana">Konsultasi Hukum Berbayar</option>
                                     <option value="Hukum Bisnis">Litigasi (Penyelesaian di Pengadilan)</option>
                                     <option value="Hukum Keluarga">Non-Litigasi (Layanan di Luar Pengadilan)</option>
-                                    <option value="Hukum Properti">Pendampingan dan Pemeriksaan Hukum (Corporate & Commercial)</option>
+                                    <option value="Hukum Properti">Pendampingan dan Pemeriksaan Hukum (Corporate &
+                                        Commercial)</option>
                                     <option value="Hukum Properti">Pengurusan Perizinan dan Administrasi</option>
                                     <option value="Hukum Properti">Bantuan hukum secara cuma-cuma (Pro Bono)</option>
                                     <option value="Lainnya">Lainnya</option>
@@ -776,7 +836,7 @@
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-blue-900 mb-1">Email</h4>
-                                        <p class="text-gray-600">trisulasmono@gmail.com
+                                        <p class="text-gray-600">lawfirmthree@gmail.com
                                         </p>
                                     </div>
                                 </div>
@@ -799,7 +859,7 @@
                                         class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-200 transition duration-300">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -895,11 +955,38 @@
             `.trim();
 
                 const mailtoLink =
-                    `https://mail.google.com/mail/?view=cm&to=trisulasmono@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    `https://mail.google.com/mail/?view=cm&to=lawfirmthree@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
                 window.open(mailtoLink, '_blank');
                 return false;
             }
+
+            // Promo Modal Functions
+            function openPromoModal() {
+                const modal = document.getElementById('promoModal');
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            }
+
+            function closePromoModal() {
+                const modal = document.getElementById('promoModal');
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+
+            // Close modal when clicking outside the image
+            document.getElementById('promoModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closePromoModal();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closePromoModal();
+                }
+            });
         </script>
     </body>
 @endsection
