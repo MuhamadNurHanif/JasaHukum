@@ -419,42 +419,60 @@
         {{-- Promo --}}
         <section class="bg-blue-50 py-20">
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
+
+                <!-- Heading -->
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-                        Promo Bulan ini
+                        Promo Bulan Ini
                     </h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                 </div>
 
-                <div class="flex justify-center items-center px-4 md:px-8 lg:px-12">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden
-                        w-full md:w-2/3 lg:w-1/2 xl:w-1/3 max-w-2xl mx-auto
-                        transform transition duration-500 hover:scale-105 cursor-pointer"
-                        onclick="openPromoModal()">
+                <!-- Grid Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                        <img src="{{ asset('images/PosterIklan.png') }}" alt="Promo Poster"
-                            class="w-full h-auto max-h-[500px] object-contain transition duration-500">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden
+                        transform transition duration-500 hover:scale-105 cursor-pointer"
+                        onclick="openPromoModal('{{ asset('images/PosterIklan.png') }}')">
+
+                        <img src="{{ asset('images/PosterIklan.png') }}" class="w-full h-[400px] object-contain">
                     </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden
+                        transform transition duration-500 hover:scale-105 cursor-pointer"
+                        onclick="openPromoModal('{{ asset('images/PosterKonsultasiHukum.png') }}')">
+
+                        <img src="{{ asset('images/PosterKonsultasiHukum.png') }}"
+                            class="w-full h-[400px] object-contain">
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden
+                        transform transition duration-500 hover:scale-105 cursor-pointer"
+                        onclick="openPromoModal('{{ asset('images/PosterLegalOpinion.png') }}')">
+
+                        <img src="{{ asset('images/PosterLegalOpinion.png') }}" class="w-full h-[400px] object-contain">
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!-- Promo Modal -->
-        <div id="promoModal" class="fixed inset-0 bg-black bg-opacity-60 hidden justify-center items-center z-50">
+        <div id="promoModal" class="hidden fixed inset-0 bg-black bg-opacity-70 justify-center items-center z-50">
 
-            <div
-                class="bg-white rounded-lg shadow-lg p-4 relative
-                w-[90%] md:w-[70%] lg:w-[50%] xl:w-[40%] max-w-3xl">
+            <!-- Overlay (klik luar untuk close) -->
+            <div class="absolute inset-0" onclick="closePromoModal()"></div>
 
-                <!-- tombol close -->
-                <button onclick="closePromoModal()" class="absolute top-2 right-3 text-gray-600 text-2xl font-bold">
-                    &times;
-                </button>
+            <!-- Gambar -->
+            <img id="promoImage" src="" class="relative max-w-[90%] max-h-[90vh] rounded-lg shadow-lg">
 
-                <!-- gambar -->
-                <img src="{{ asset('images/PosterIklan.png') }}"
-                    class="w-full h-auto max-h-[80vh] object-contain mx-auto">
-            </div>
+            <!-- Tombol Close -->
+            <button onclick="closePromoModal()" class="absolute top-5 right-5 text-white text-3xl font-bold">
+                &times;
+            </button>
         </div>
 
         <!-- Testimonials -->
@@ -736,7 +754,7 @@
         <section class="py-12 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Mitra organisasi advokat kami:</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Mitra</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -747,6 +765,10 @@
                     <img src="{{ asset('images/kai.png') }}" alt="LBH"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/PERADI NUSANTARA.jpeg') }}" alt="peradi"
+                        class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="{{ asset('images/Logo IPPAT.jpeg') }}" alt="IPPAT"
+                        class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
+                    <img src="{{ asset('images/LOGO INI.jpeg') }}" alt="INI"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                 </div>
             </div>
@@ -965,25 +987,29 @@
                 return false;
             }
 
-            // Promo Modal Functions
-            function openPromoModal() {
-                document.getElementById('promoModal').classList.remove('hidden');
-                document.getElementById('promoModal').classList.add('flex');
+            function openPromoModal(imageSrc) {
+                const modal = document.getElementById('promoModal');
+                const modalImg = document.getElementById('promoImage');
+
+                modalImg.src = imageSrc; // set gambar sesuai klik
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
             }
 
             function closePromoModal() {
-                document.getElementById('promoModal').classList.add('hidden');
-                document.getElementById('promoModal').classList.remove('flex');
+                const modal = document.getElementById('promoModal');
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
             }
 
-            // Close modal when clicking outside the image
+            // Klik luar modal = close
             document.getElementById('promoModal').addEventListener('click', function(e) {
                 if (e.target === this) {
                     closePromoModal();
                 }
             });
 
-            // Close modal with Escape key
+            // ESC = close
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape') {
                     closePromoModal();
