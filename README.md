@@ -1,66 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# JasaHukum - Landing Page Kantor Hukum
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Landing page untuk kantor hukum TRI SULASMONO, S.H & PARTNER yang dibangun dengan Laravel dan Vite.
 
-## About Laravel
+## 🚀 Deployment ke Vercel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Project ini menggunakan static export yang di-deploy ke Vercel dengan konfigurasi khusus untuk file blog.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Setup Lokal
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Install dependencies:
+```bash
+npm install
+```
 
-## Learning Laravel
+2. Build untuk production:
+```bash
+npm run build
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3. File hasil build akan ada di direktori `dist/` dan siap untuk deploy.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Konfigurasi Khusus
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Project ini memiliki custom plugin Vite di `vite.config.js` yang otomatis menyalin file HTML dari folder `blog/` ke `dist/blog/` saat proses build.
 
-## Laravel Sponsors
+### Struktur File Blog
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+File blog HTML statis ditempatkan di:
+```
+blog/
+  ├── cara-mendirikan-pt-yang-benar-sesuai-hukum-indonesia.html
+  ├── hak-asuh-anak-pasca-perceraian.html
+  └── memahami-hak-tersangka-dalam-proses-penyidikan-pidana.html
+```
 
-### Premium Partners
+Setelah build, file-file ini akan otomatis di-copy ke:
+```
+dist/blog/
+  ├── cara-mendirikan-pt-yang-benar-sesuai-hukum-indonesia.html
+  ├── hak-asuh-anak-pasca-perceraian.html
+  └── memahami-hak-tersangka-dalam-proses-penyidikan-pidana.html
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Konfigurasi Vercel
 
-## Contributing
+File `vercel.json` telah ditambahkan untuk routing file blog:
+- Routes ke `/blog/*` akan di-serve sebagai static files
+- Cache headers di-set untuk optimal performance
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Deploy ke Vercel
 
-## Code of Conduct
+1. Push kode ke repository GitHub
+2. Connect repository ke Vercel
+3. Set **Output Directory** ke `dist`
+4. Deploy!
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Troubleshooting
 
-## Security Vulnerabilities
+Jika mengalami error 404 pada halaman blog:
+1. Pastikan sudah menjalankan `npm run build` terbaru
+2. Check apakah file blog ada di `dist/blog/`
+3. Verify `vercel.json` sudah ter-deploy
+4. Clear cache Vercel dan redeploy
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🛠️ Tech Stack
 
-## License
+- **Framework**: Laravel 11
+- **Build Tool**: Vite 6
+- **CSS**: TailwindCSS 3
+- **Deployment**: Vercel
+- **Animation**: AOS (Animate On Scroll)
+
+## 📝 Development
+
+### Menambah Blog Baru
+
+1. Buat file HTML baru di folder `blog/`
+2. Pastikan nama file menggunakan format SEO-friendly (misal: `judul-artikel.html`)
+3. Tambahkan link di `resources/views/beranda.blade.php`
+4. Run `npm run build`
+5. Commit dan push ke GitHub
+
+### Modifikasi Styles
+
+- Main styles: `resources/css/app.css`
+- Custom styles: `resources/css/output.css`
+- Tailwind config: `tailwind.config.js`
+
+## 📞 Contact
+
+- **Email**: lawfirmthree@gmail.com
+- **WhatsApp**: +62 859-1069-53875
+- **Alamat**: Dusun Krajan RT.001 RW.009 Desa Dadapan Kecamatan Kabat Kabupaten Banyuwangi Provinsi Jawa Timur Indonesia Kode Pos 68461
+
+## 📄 License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

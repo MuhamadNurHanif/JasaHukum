@@ -766,7 +766,7 @@
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/PERADI NUSANTARA.jpeg') }}" alt="peradi"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="{{ asset('images/IPPAT.jfif-removebg-preview.png') }}" alt="IPPAT"
+                    <img src="{{ asset('images/logo_ippat-removebg.png') }}" alt="IPPAT"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/LOGO_INI.jfif-removebg-preview.png') }}" alt="INI"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
