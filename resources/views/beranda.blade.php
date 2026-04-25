@@ -584,7 +584,7 @@
 
                 <!-- Header -->
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Blog</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Berita</h2>
                     <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
                 </div>
 
@@ -766,9 +766,9 @@
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                     <img src="{{ asset('images/PERADI NUSANTARA.jpeg') }}" alt="peradi"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="{{ asset('images/Logo IPPAT.jpeg') }}" alt="IPPAT"
+                    <img src="{{ asset('images/IPPAT.jfif-removebg-preview.png') }}" alt="IPPAT"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
-                    <img src="{{ asset('images/LOGO INI.jpeg') }}" alt="INI"
+                    <img src="{{ asset('images/LOGO_INI.jfif-removebg-preview.png') }}" alt="INI"
                         class="h-12 md:h-16 opacity-70 hover:opacity-100 transition duration-300">
                 </div>
             </div>

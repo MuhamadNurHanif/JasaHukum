@@ -12,7 +12,8 @@
                 <a href="#about" class="hover:text-blue-300 transition duration-300">Tentang Kami</a>
                 <a href="#services" class="hover:text-blue-300 transition duration-300">Layanan</a>
                 <a href="#contact" class="hover:text-blue-300 transition duration-300">Kontak</a>
-                <a href="#blog" class="hover:text-blue-300 transition duration-300">Blog</a>
+                <a href="#contact" class="hover:text-blue-300 transition duration-300">Karir</a>
+                <a href="#blog" class="hover:text-blue-300 transition duration-300">Berita</a>
             </div>
             <div class="md:hidden flex items-center">
                 <button class="outline-none mobile-menu-button">
