@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://jasa-hukum.vercel.app/sitemap.xml
+
+# Crawl-delay (optional, untuk mengurangi beban server)
+Crawl-delay: 1
