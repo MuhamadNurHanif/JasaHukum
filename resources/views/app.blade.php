@@ -19,6 +19,9 @@
     <meta name="geo.region" content="ID-JI">
     <meta name="geo.placename" content="Banyuwangi">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="BVd6pz9dPOazQu_9g7WYI8aZYLBFnQT82y9a3ZhA6tA" />
+
     <!-- Social media share -->
     <meta property="og:title" content="Tri Sulasmono, S.H. & Partner - Jasa Hukum Banyuwangi">
     <meta property="og:site_name" content="Tri Sulasmono, S.H. & Partner">
